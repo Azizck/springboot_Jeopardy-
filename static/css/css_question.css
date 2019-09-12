@@ -1,0 +1,74 @@
+body {
+	background-color:black ;
+
+}
+
+.cat-val {
+	grid-area: category-g;
+}
+
+.question {
+	grid-area: question-g
+}
+
+.option1 {
+	grid-area: option1-g
+}
+
+.option2 {
+	grid-area: option2-g
+}
+
+.option3 {
+	grid-area: option3-g
+}
+
+.option4 {
+	grid-area: option4-g
+}
+
+#container {
+	position: relative;
+	background-color: #15aa94;
+	display: grid;
+	width: 60%;
+	grid-template-columns: auto;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 1px;
+	grid-template-areas: "category-g category-g" "question-g question-g"
+		"option1-g option2-g" " option3-g option4-g "
+}
+
+#container>div {
+	margin: 10px;
+	padding: 40px;
+	font-size: 1.5em;
+	padding: 20px;
+	background-color: gray;
+	text-align: center;
+}
+
+#wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.option {
+	background: none;
+	border: none;
+	font-size: 1.1em;
+}
+
+/*
+input[type="button"], input[type="submit"] {
+	background: none;
+	border: none;
+	font-size: 1.1em;
+}
+
+input[type="submit" i] {
+	background: none;
+	border: none;
+	font-size: 1.1em;
+}
+*/

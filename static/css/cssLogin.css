@@ -1,0 +1,59 @@
+h1 {
+	text-align: center;
+	color: #000C94;
+	font-size: 6em;
+}
+
+body {
+	background-color: #E7E8E6;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	padding: 15px;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	width: 30%;
+	border-radius: 37px;
+	height: 12em;
+}
+
+#container>div {
+	display: block;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+input {
+	color: white;
+	background-color: inherit;
+	border: none;
+}
+
+.wrapper {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+input:focus, textarea:focus, select:focus {
+	outline: none;
+}
+
+.submit:hover {
+	background-color: gray;
+}
+
+.submit {
+	width: 20%;
+	background-color: #00206A;
+}
+
+.name {
+	width: 60%;
+	background-color: #8E8E9B;
+}

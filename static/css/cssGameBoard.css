@@ -1,0 +1,34 @@
+td {
+	background-color: #0a76bf;
+	margin: 10px;
+	padding: 10px;
+}
+
+table {
+	margin: auto;
+	text-align: center;
+	width: 80%;
+	height: 40em;
+	padding: 10px;
+}
+
+td:hover {
+	background-color: yellow;
+}
+
+h2, h4 {
+	text-align: center;
+}
+
+th{
+	background-color:#939494;
+
+	margin: 10px;
+	padding: 10px;
+
+}
+a {
+      text-decoration: none;
+    color: #ffee08;
+    font-size: 1.5em;
+}

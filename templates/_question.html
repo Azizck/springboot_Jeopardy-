@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{css/css_question.css}">
+<title>Question</title>
+</head>
+<body>
+
+	<div id="wrapper">
+		<div id="container">
+			<div class="cat-val">
+				<span th:text="${session.question.category}"> </span> <span
+					th:text="${session.question.value}"> </span>
+			</div>
+			<div class="question">
+				<span th:text="${session.question.question}"></span>
+			</div>
+			<div class="option1">
+
+				<form action="evaluteAnswer">
+					<input type="hidden" name="chosen" th:value="${session.question.answer1}">
+					<input class="option" type="submit" th:value="${session.question.answer1}">
+					</form>
+			</div>
+			<div class="option2">
+
+				<form action="evaluteAnswer">
+					<input type="hidden" name="chosen" th:value="${session.question.answer2}">
+					<input class="option" type="submit" th:value="${session.question.answer2}">
+					</form>
+			</div>
+			<div class="option3">
+				<form action="evaluteAnswer">
+					<input type="hidden" name="chosen" th:value="${session.question.answer3}">
+					<input class="option" type="submit" th:value="${session.question.answer3}">
+					</form>
+
+			</div>
+			<div class="option4">
+				<form action="evaluteAnswer">
+					<input type="hidden" name="chosen" th:value="${session.question.answer4}">
+					<input class="option" type="submit" th:value="${session.question.answer4}">
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

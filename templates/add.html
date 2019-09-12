@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+	body{
+		font-size: 20px;
+		padding: 10px;
+	}	
+	input{
+		margin: 10px;
+		background-color: lightgray;
+		border:none;
+		padding: 10px;
+
+		font-size: 20px;
+
+	}
+	input[type="radio"]{
+		margin-left:0px;
+	}
+	input[type="submit"]{
+		padding: 20px;
+		background-color:#8bc34a ;
+		width:30%;
+
+	}
+	div{
+		text-align: center;
+		width: 40%;
+	}
+
+	select{
+		margin: 10px;	
+		margin-bottom:2px;
+		background-color:#acb7cc;
+		padding: 10px;
+	}
+	.answer{
+		text-align: center;
+	}
+	.question{
+		width: 40%;
+		background-color:#d7d5c8; 
+		color:white;
+	}
+</style>
+</head>
+<body>
+	<form action="add">
+		 Category:
+		<select name="category">
+			<option>Cities</option>
+			<option>Science</option>
+			<option>History</option>
+			<option>General</option>
+			<option>Canada</option>
+		</select>
+		 Value:
+		 <select name="value">
+			<option>100</option>
+			<option>200</option>
+			<option>300</option>
+			<option>400</option>
+			<option>500</option>
+		</select> 
+
+		<br>
+		<input class="question" type="text" name="question" placeholder="Enter Your Question">
+		 <br> 
+		 <input class="answer" type="text" name="answer1" placeholder="Enter Answer One">
+		  <input type="radio" name=chosen value="1"> 
+		  <input class= "answer" type="text" name="answer2" placeholder="Answer Two">
+		  <input type="radio" name=chosen value="2">
+		  <br>
+		<input class="answer" type="text" name="answer3" placeholder="Answer Three">
+		 <input type="radio" name=chosen value="3"> 
+		 <input class="answer" type="text" name="answer4" placeholder="Answer Four">
+		<input type="radio" name=chosen value="4">
+		<div>
+		<input type="submit" value="add"> 
+		</div>
+	</form>
+
+</body>
+</html>

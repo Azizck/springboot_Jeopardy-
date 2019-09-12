@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{css/cssGameBoard.css}">
+<meta charset="ISO-8859-1">
+<title>Game Board</title>
+
+
+</head>
+<body>
+	<h2 id='name'>
+		<span th:text="${session.player.name}">Claire Clairson</span></s>
+	</h2>
+
+	<h4>
+		Score:<span th:text="${session.player.score}"></span>
+	</h4>
+	<table>
+		<tr>
+			<th>Cities</th>
+			<th>Science</th>
+			<th>History</th>
+			<th>General</th>
+			<th>Canada</th>
+		</tr>
+		<tr>
+			<td><a href="cANDv?category=Cities&value=100"> 100</a></td>
+			<td><a href="cANDv?category=Science&value=100"> 100</a></td>
+			<td><a href="cANDv?category=History&value=100"> 100</a></td>
+			<td><a href="cANDv?category=General&value=100"> 100</a></td>
+			<td><a href="cANDv?category=Canada&value=100"> 100</a></td>
+		</tr>
+
+		<tr>
+			<td><a href="cANDv?category=Cities&value=200"> 200</a></td>
+			<td><a href="cANDv?category=Science&value=200"> 200</a></td>
+			<td><a href="cANDv?category=History&value=200"> 200</a></td>
+			<td><a href="cANDv?category=General&value=200"> 200</a></td>
+			<td><a href="cANDv?category=Canada&value=200"> 200</a></td>
+		</tr>
+
+		<tr>
+			<td><a href="cANDv?category=Cities&value=300"> 300</a></td>
+			<td><a href="cANDv?category=Science&value=300"> 300</a></td>
+			<td><a href="cANDv?category=History&value=300"> 300</a></td>
+			<td><a href="cANDv?category=General&value=300"> 300</a></td>
+			<td><a href="cANDv?category=Canada&value=300"> 300</a></td>
+		</tr>
+
+		<tr>
+			<td><a href="cANDv?category=Cities&value=400"> 400</a></td>
+			<td><a href="cANDv?category=Science&value=400"> 400</a></td>
+			<td><a href="cANDv?category=History&value=400"> 400</a></td>
+			<td><a href="cANDv?category=General&value=400"> 400</a></td>
+			<td><a href="cANDv?category=Canada&value=400"> 400</a></td>
+		</tr>
+
+		<tr>
+			<td><a href="cANDv?category=Cities&value=500"> 500</a></td>
+			<td><a href="cANDv?category=Science&value=500"> 500</a></td>
+			<td><a href="cANDv?category=History&value=500"> 500</a></td>
+			<td><a href="cANDv?category=General&value=500"> 500</a></td>
+			<td><a href="cANDv?category=Canada&value=500"> 500</a></td>
+		</tr>
+
+
+	</table>
+
+
+</body>
+
+
+</html>
